@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>3D旋转效果</title>
+		<link rel="stylesheet" href="http://unpkg.com/layui@2.6.8/dist/css/layui.css" />
+		<link rel="stylesheet" href="./css/tab1.css" />
+		<link rel="stylesheet" href="./css/tab2.css" />
+		<link rel="stylesheet" href="./css/tab3.css" />
+		<link rel="stylesheet" href="./css/tab4.css" />
+	</head>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background-position: center;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+			background: linear-gradient(0deg, #3082b1 0%, #3082b1 100%);
+			overflow: hidden;
+		}
+		li {
+			list-style: none;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		.contentbox {
+			width: 1000px;
+			margin: auto;
+			margin-top: 2em;
+			clear: left;
+		}
+		.layui-tab-title {
+			/* text-align: center; */
+		}
+	</style>
+	<body>
+		<div class="contentbox">
+			<div class="layui-tab">
+				<ul class="layui-tab-title">
+					<li class="layui-this">基本介绍</li>
+					<li>快乐源泉</li>
+					<li>遇见北京</li>
+					<li>爱的魔方</li>
+					<li>订单管理</li>
+				</ul>
+				<div class="layui-tab-content">
+					<div class="layui-tab-item layui-show">
+						<div class="qcontainer">
+							<div class="film">
+								<div class="face front">
+									<img src="images/photo01.jpg" />
+								</div>
+								<div class="face back"><h3>这是老大!!</h3></div>
+							</div>
+						</div>
+						<div class="qcontainer">
+							<div class="film">
+								<div class="face front">
+									<img src="images/photo02.jpg" />
+								</div>
+								<div class="face back"><h3>这是大姐头!!</h3></div>
+							</div>
+						</div>
+						<div class="qcontainer">
+							<div class="film">
+								<div class="face front">
+									<img src="images/photo03.jpg" />
+								</div>
+								<div class="face back"><h3>这是小清!!</h3></div>
+							</div>
+						</div>
+						<div class="qcontainer">
+							<div class="film">
+								<div class="face front">
+									<img src="images/photo04.jpg" />
+								</div>
+								<div class="face back"><h3>这是学霸!!</h3></div>
+							</div>
+						</div>
+					</div>
+					<div class="layui-tab-item">
+						<div class="content">
+							<div class="box">
+								<img
+									src="https://img2.baidu.com/it/u=3525963429,447969579&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=800"
+									alt=""
+									srcset="" />
+							</div>
+							<div class="box">
+								<img
+									src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201505%2F10%2F20150510034724_BVJrW.thumb.400_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661140908&t=cb5a6281142a753d12b5ddd3b9ee9101"
+									alt=""
+									srcset="" />
+							</div>
+							<div class="box">
+								<img
+									src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201607%2F03%2F20160703091947_fe8VH.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661140908&t=a444d81918717c3420a5e9c50db33afe"
+									alt=""
+									srcset="" />
+							</div>
+							<div class="box">
+								<img
+									src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202004%2F07%2F20200407125923_wgmcf.thumb.400_0.jpg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661140909&t=ded0c8fa15d09e5900f8b5213a6a56bf"
+									alt=""
+									srcset="" />
+							</div>
+							<div class="box">
+								<img
+									src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201506%2F30%2F20150630225114_CYRHE.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661140909&t=8c69ce235a7d2e6d1d7820dc8e7e68e9"
+									alt=""
+									srcset="" />
+							</div>
+						</div>
+					</div>
+					<div class="layui-tab-item">
+						<div class="container">
+							<div class="galleries">
+								<span style="--i: 1">
+									<img src="./images/p01.jpg" alt="galleries" />
+								</span>
+
+								<span style="--i: 2">
+									<img src="./images/p01.jpg" alt="galleries" />
+								</span>
+
+								<span style="--i: 3">
+									<img src="./images/p01.jpg" alt="galleries" />
+								</span>
+
+								<span style="--i: 4">
+									<img src="./images/p01.jpg" alt="galleries" />
+								</span>
+
+								<span style="--i: 5">
+									<img src="./images/p01.jpg" alt="galleries" />
+								</span>
+
+								<span style="--i: 6">
+									<img src="./images/p01.jpg" alt="galleries" />
+								</span>
+
+								<span style="--i: 7">
+									<img src="./images/p01.jpg" alt="galleries" />
+								</span>
+
+								<span style="--i: 8">
+									<img src="./images/p01.jpg" alt="galleries" />
+								</span>
+							</div>
+
+							<div class="arrows">
+								<div class="arrow prev"></div>
+								<div class="arrow next"></div>
+							</div>
+						</div>
+					</div>
+					<div class="layui-tab-item tab4">
+						<div class="container">
+							<div class="q1">
+								<img src="./images/photo01.jpg" />
+							</div>
+							<div class="h2">
+								<img src="./images/photo01.jpg" />
+							</div>
+							<div class="z3">
+								<img src="./images/photo01.jpg" />
+							</div>
+							<div class="y4">
+								<img src="./images/photo01.jpg" />
+							</div>
+							<div class="s5">
+								<img src="./images/photo01.jpg" />
+							</div>
+							<div class="x6">
+								<img src="./images/photo01.jpg" />
+							</div>
+						</div>
+					</div>
+					<div class="layui-tab-item">5</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			layui.use('element', function () {
+				var element = layui.element
+			})
+		</script>
+		<script src="https://unpkg.com/layui@2.6.8/dist/layui.js"></script>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script src="./js/tab3.js"></script>
+		<!-- <script src="./js/snow.js"></script> -->
+	</body>
+</html>
